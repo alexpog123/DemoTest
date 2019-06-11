@@ -1,0 +1,14 @@
+table{
+  width:100%;
+
+  tr{
+    cursor:pointer;
+  }
+  tr:hover{
+    background-color:#74D5DD;
+  }
+}
+
+.panel{
+  position:absolute;
+}

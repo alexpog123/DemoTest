@@ -1,0 +1,17 @@
+<div>Filter:
+  <input [(ngModel)]="query" (input)="filterPosts()">
+</div>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Url</th>
+    <th>Created at</th>
+    <th>Author</th>
+  </tr>
+  <tr *ngFor="let post of filteredPosts" (click)="openDialog(post)">
+    <td>{{post.title}}</td>
+    <td>{{post.url}}</td>
+    <td>{{post.created_at| date:'short'}}</td>
+    <td>{{post.author}}</td>
+  </tr>
+</table>
